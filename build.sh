@@ -43,7 +43,7 @@ else
 fi
 
 sh autogen.sh
-./configure --disable-websockets --disable-data-channels \
+./configure --disable-aes-gcm --disable-websockets --disable-data-channels \
 	--disable-rabbitmq --disable-docs --disable-mqtt --prefix=/opt/janus
 make
 sudo make install
